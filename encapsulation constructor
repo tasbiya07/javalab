@@ -1,0 +1,42 @@
+package javapractice;
+
+class bankaccount {
+    private float balance;
+    private float amount;
+
+    public void setbalance(float balance) {
+        this.balance = balance;
+    }
+
+    public float getamount() {
+        return amount; // FIXED: Previously returning balance
+    }
+
+    public void setamount(float amount) {
+        this.amount = amount;
+    }
+
+    public float getbalance() {
+        if (amount > 0) {
+            this.balance = balance + amount;
+            return balance;
+        } else {
+            System.out.println("its not possible");
+            return this.balance;
+        }
+    }
+}
+
+public class encapsulation {
+    public static void main(String[] args) {
+        bankaccount b = new bankaccount();
+        b.setbalance(18600);
+        b.setamount(80.2f);
+
+        System.out.println("amount going to be added in bank account is " + b.getamount());
+        System.out.println("total amount in bankaccount is " + b.getbalance());
+    }
+}
+OUTPUT:
+amount going to be added in bank account is 80.2
+total amount in bankaccount is 18680.2
