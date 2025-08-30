@@ -1,0 +1,50 @@
+package javapractice;
+class CSE{
+
+	
+
+	CSE(){//default constructor
+
+		
+
+		System.out.println("hello,friends!");
+
+	}
+
+	CSE(String str){
+
+		System.out.println("hi "+str);
+
+	}
+
+	CSE(int b,int a){
+
+		System.out.println(b + a);//parametralized constructor with 2 parameters
+
+	}
+
+}
+
+
+
+
+public class constructor {
+
+	public static void main(String[] args) {
+
+		CSE obj=new CSE();
+
+		CSE a=new CSE("daksh");
+
+		CSE b=new CSE(5,4);
+
+	}
+
+
+
+}
+OUTPUT:
+hello,friends!
+hi daksh
+9
+
