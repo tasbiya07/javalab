@@ -1,0 +1,33 @@
+package javapractice;
+
+class CSE {
+
+    // Default constructor
+    CSE() {
+        System.out.println("hi i am avni");
+    }
+
+    // One-parameter constructor
+    CSE(String str) {
+        System.out.println(str);
+    }
+
+    // Three-parameter constructor
+    CSE(String str1, int a, int b) {
+        System.out.println(str1 + a + b);
+    }
+}
+
+public class constructor {
+
+    public static void main(String[] args) {
+
+        CSE obj = new CSE();                  // default constructor
+        CSE a = new CSE("avni");              // one parameter
+        CSE b = new CSE("avni", 6, 4);        // three parameters
+    }
+}
+OUTPUT:
+hi i am avni
+avni
+avni64
