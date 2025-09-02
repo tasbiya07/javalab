@@ -1,0 +1,47 @@
+package Com.Sample;
+
+class RbiBank{
+	public double getRateOfInterest() {
+		return 5.0;
+	}}
+class SBI extends RbiBank{
+	@Override
+	public double getRateOfInterest() {
+		return 6.5;
+	}}
+class HDFC extends RbiBank{
+	@Override
+	public double getRateOfInterest() {
+		return 7.5;
+}
+}
+class CANARA extends RbiBank{
+	@Override
+	public double getRateOfInterest() {
+		return 4;
+	}
+}
+
+public class Bank {
+	public static void main(String[] args) {
+	//TODO Auto-generated method sub
+	RbiBank rb=new RbiBank();
+	RbiBank rb1=new RbiBank();
+	SBI sb1=new SBI();
+	HDFC hd1=new HDFC();
+	CANARA ca1=new CANARA();
+	System.out.println("RBI Rate of Interest"+rb.getRateOfInterest());
+	System.out.println("SBI Rate of Interest"+sb1.getRateOfInterest());
+	System.out.println("HDFC Rate of Interest"+hd1.getRateOfInterest());
+	System.out.println("CANARA Rate of Interest"+ca1.getRateOfInterest());
+	System.out.println("New SBI Rate of Interest"+hd1.getRateOfInterest());
+
+}
+}
+
+OUTPUT:
+RBI Rate of Interest5.0
+SBI Rate of Interest6.5
+HDFC Rate of Interest7.5
+CANARA Rate of Interest4.0
+New SBI Rate of Interest7.5
